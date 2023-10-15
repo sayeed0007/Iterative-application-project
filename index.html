@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link href="./global.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="logo">Crystal Clear</h1>
+        <form method="get" class="search">
+            <label for="location">Select Location :</label>
+            <select id="location" class="search_input" onchange="redirectOnChange()">
+                <option value="default" selected>Location</option>
+                <option value="helsenki" >Helsinki</option>
+                <option value="jyvaskyla">Jyväskylä</option>
+                <option value="turuk">Turku</option>
+                <option value="lahti">Lahti</option>
+            </select>
+        </form>
+        <main id="app">
+                <div class="container landing-page">
+                   <h1> Accurate daily forecast from 
+                    Crystal Clear</h1>
+                </div>
+              </main>
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>

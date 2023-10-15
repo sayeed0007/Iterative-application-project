@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather of Lathi, FI</title>
+    <link href="./global.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="logo">Crystal Clear</h1>
+        <form method="get" class="search">
+            <label for="location">Select Location :</label>
+            <select id="location" class="search_input" onchange="redirectOnChange()">
+                <option value="default">Location</option>
+                <option value="helsenki">Helsinki</option>
+                <option value="jyvaskyla">Jyväskylä</option>
+                <option value="turuk">Turku</option>
+                <option value="lahti" selected>Lahti</option>
+            </select>
+        </form>
+        <main id="app">
+            <div class="container">
+                <div class="datetime">Sunday, October 15 at 3:25 PM</div>
+                <h1 class="city">Today’s Forecast Lahti, FI</h1>
+                <div class="weather-detail">
+                    <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="Clouds"> 
+                    <span class="temp">5°C</span>
+                </div>
+                <div class="weather-desc">
+                    <div class="main-weather">Clouds</div>
+                    <p>Feels like 0°C. overcast clouds</p>
+                </div>
+                <ul class="weather-info">
+                    <li><span class="min">Min: 5°C to Max: 5 °C</span></li>
+                    <li class="windspeed">Windspeed : 5.73 m/s</li>
+                    <li class="humidity">Humidity : 80%</li>
+                    <li class="visibility">Visibility : 7 km</li>
+                </ul>
+            </div>
+              </main>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
